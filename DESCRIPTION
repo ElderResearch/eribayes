@@ -1,6 +1,6 @@
 Package: eribayes
 Title: Tools to simplify Bayesian model fitting
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: c(
     person("Tom", "Shafer", , "tom.shafer@elderresearch.com", c("aut", "cre")),
     person("Elder Research", , , "support@elderresearch.com", "cph"))
