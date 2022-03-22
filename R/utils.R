@@ -1,12 +1,13 @@
 
 
 s <- function(x, stem = NULL) {
-  ext <- if (is.na(x) || length(x) != 1) "s" else ""
-  paste0(stem, ext)  # paste()-ing ext with NULL returns ext
+  ext <- if (any(is.na(x)) || length(x) != 1) "s" else ""
+  # paste() ext with NULL => ext
+  paste0(stem, ext)
 }
 
 
-check_installed <- function(packages) {
+check_for_packages <- function(packages) {
   errors <- 0
   for (package in packages) {
     if (!requireNamespace(package, quietly = TRUE)) {
@@ -18,5 +19,5 @@ check_installed <- function(packages) {
   if (errors > 0) {
     stop(sprintf(msg, errors, s(errors, "package")))
   }
-  invisible(NULL)
+  invisible(TRUE)
 }

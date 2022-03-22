@@ -1,3 +1,4 @@
 # eribayes 0.0.0.9000
 
-* Added a `NEWS.md` file to track changes to the package.
+* Add already completed functionality from
+  <https://github.com/tomshafer/tt>.

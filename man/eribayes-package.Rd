@@ -4,12 +4,17 @@
 \name{eribayes-package}
 \alias{eribayes}
 \alias{eribayes-package}
-\title{eribayes: What the Package Does (One Line, Title Case)}
+\title{eribayes: Tools to simplify Bayesian model fitting}
 \description{
-What the package does (one paragraph).
+|- The package *eribayes* supports Bayesian model fitting and workflow by providing wrappers for common needs that are compatible with multiple MCMC frontends for the Stan probabilistic programming language.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Tom Shafer \email{tom.shafer@elderresearch.com}
+
+Other contributors:
+\itemize{
+  \item Elder Research \email{support@elderresearch.com} [copyright holder]
+}
 
 }
 \keyword{internal}

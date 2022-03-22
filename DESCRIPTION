@@ -1,14 +1,20 @@
 Package: eribayes
-Title: What the Package Does (One Line, Title Case)
+Title: Tools to simplify Bayesian model fitting
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Tom", "Shafer", , "tom.shafer@elderresearch.com", c("aut", "cre")),
+    person("Elder Research", , , "support@elderresearch.com", "cph"))
+Description: |-
+  The package *eribayes* supports Bayesian model fitting and
+  workflow by providing wrappers for common needs that are
+  compatible with multiple MCMC frontends for the Stan
+  probabilistic programming language.
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Suggests: 
     brms,
-    rstan
+    rstan,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

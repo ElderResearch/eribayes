@@ -1,25 +1,10 @@
-
-# eribayes
+# eribayes: Tools to Simplify Bayesian Fits
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of eribayes is to ...
-
 ## Installation
 
-You can install the development version of eribayes like so:
-
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```r
+remotes::install_github("ElderResearch/eribayes")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(eribayes)
-## basic example code
-```
-

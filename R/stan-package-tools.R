@@ -21,14 +21,14 @@ extract_divergences <- function(x, ...) {
 #' @export
 #' @noRd
 extract_divergences.brmsfit <- function(x, ...) {
-  check_installed("brms")
+  check_for_packages("brms")
   brms::nuts_params(x, "divergent__")[, "Value"]
 }
 
 #' @export
 #' @noRd
 extract_divergences.stanfit <- function(x, ...) {
-  check_installed("rstan")
+  check_for_packages("rstan")
   divs <- sapply(rstan::get_sampler_params(x), function(x) x[, "divergent__"])
   as.vector(divs)
 }
@@ -60,14 +60,14 @@ extract_treedepths <- function(x, ...) {
 #' @export
 #' @noRd
 extract_treedepths.brmsfit <- function(x, ...) {
-  check_installed("brms")
+  check_for_packages("brms")
   brms::nuts_params(x, "treedepth__")[, "Value"]
 }
 
 #' @export
 #' @noRd
 extract_treedepths.stanfit <- function(x, ...) {
-  check_installed("rstan")
+  check_for_packages("rstan")
   depths <- sapply(rstan::get_sampler_params(x), function(x) x[, "treedepth__"])
   as.vector(depths)
 }
